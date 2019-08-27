@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 340px;
+    padding-top: 0;
+    margin: auto 10px;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto auto auto;
+    width: 65%;
+}
+
+.icon {
+    width: 32%;
+    /* text-align: right; */
+    /* font-size: 280%; */
+    /* margin-left: 10%; */
+    color: #ff8c00;
+}
+
+.footer-link, .nav-link {
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-link:visited, .nav-link:visited {
+    color: black;
+}
+
+.footer-link:hover, .nav-link:hover {
+    color: black;
+}
+
+.sub-entry {
+    text-align: left;
+    /* width: 52%; */
+}
+
+.sub-entry p {
+    margin-top: 0;
+    font-size: 1.06em;
+}
+
+.t-desc {
+    font-size: 1.2em;
+    margin: 10px auto;
+}
+
+.t-name {
+    width: 100%;
+    background-color:#dddddd;
+    height: 40px;
+    margin-top: 0;
+    padding-top: 18px;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.t-price {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin: 20px auto;
+}
+
+.t-select {
+    border: 0;
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+#email {
+    height: 22px;
+    width: 250px;
+    padding-left: 5px;
+}
+
+#footer {
+    width: 67%;
+    height: 82px;
+    margin: auto;
+    background-color: #dddddd;
+    position: relative;
+    top: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* text-align: right; */
+}
+
+#footer-content {
+    /* vertical-align: middle; */
+    width: auto;
+    text-align: center;
+    float: right;
+    margin-right: 15px;
+}
+
+#footer-content p {
+    margin: 2px 0;
+    color: rgb(60, 60, 60);
+}
+
+#footer-content a{
+    margin: auto 6px;
+}
+
+#header {
+    /* background: rgb(233, 233, 233); */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    top: 0px;
+    position: fixed;
+    /* padding-left: 2%; */
+}
+
+#header-img {
+    height: 35px;
+    vertical-align: middle;
+    padding-left: 2%;
+}
+
+#nav-bar {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    padding-right: 3%;
+}
+
+#main {
+    text-align: center;
+    margin-top: 80px;
+    /* background-color: rgb(233, 233, 233); */
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 80px;
+    border: 0;
+    background-color: #f1c40f;
+    font-size: 1.03em;
+    font-weight: 900;
+    padding: 5px 12px;
+    border-radius: 2px;
+}
+
+#submit:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+#t-choice {
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+    width: 100%;
+}
+
+#video{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #ffa500;
+    }
+}
+
+@media (max-width: 560px) {
+    #video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        height: 148px;
+        
+    }
+
+    #header-img {
+        position: relative;
+        top: 20px;
+        
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    #main {
+        margin-top: 170px;
+    }
+
+    .nav-link {
+        margin: 3px auto;
+    }
+}
+
+@media  (min-width: 601px) and (max-width: 650px) {
+    #header {
+        justify-content: space-around;
+        height: 75px;
+        /* position: fixed; */
+    }
+    
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 20px; */
+    }
+
+    #main {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    #t-choice {
+        flex-direction: column;
+        align-items: center;
+    }
+}
